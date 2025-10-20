@@ -161,8 +161,6 @@ public class ActivityServiceImpl implements ActivityService {
 		List<Activity> activities = activityRepository.findByUserAndCreatedAtBetween(user, startDate.atStartOfDay(),
 				endDate.atTime(23, 59, 59));
 
-		return activities.stream().map(activity -> modelMapper.map(activity, ActivityResponse.class))
-				.collect(Collectors.toList());
+		return activities.stream().map(a -> modelMapper.map(a, ActivityResponse.class)).collect(Collectors.toList());
 	}
-
 }

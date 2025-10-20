@@ -25,4 +25,5 @@ public interface ActivityService {
 	ApiResponse<Void> deleteAllActivities(User user);
 
 	List<ActivityResponse> getActivitiesBetween(User user, LocalDate startDate, LocalDate endDate);
+
 }
