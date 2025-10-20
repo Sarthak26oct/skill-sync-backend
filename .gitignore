@@ -1,0 +1,51 @@
+# -------------------------------
+# Java & Spring Boot Git Ignore
+# -------------------------------
+
+# Maven target folder
+/target/
+
+# Gradle build folder (if used)
+/build/
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Eclipse specific files
+.project
+.classpath
+.settings/
+
+# IntelliJ IDEA specific files
+.idea/
+*.iml
+out/
+
+# VS Code
+.vscode/
+
+# Environment variables and credentials
+*.env
+application-*.yml
+application-*.properties
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Package files
+*.jar
+*.war
+*.ear
+
+# Node modules (if using React in same repo)
+node_modules/
+
+# Mac-specific
+__MACOSX
