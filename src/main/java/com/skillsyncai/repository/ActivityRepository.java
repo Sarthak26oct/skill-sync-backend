@@ -22,4 +22,6 @@ public interface ActivityRepository extends JpaRepository<Activity, Long> {
 
 	List<Activity> findByUserAndCreatedAtBetween(User user, LocalDateTime start, LocalDateTime end);
 
+	List<Activity> findAllByUser(User user);
+
 }

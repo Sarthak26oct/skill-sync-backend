@@ -14,4 +14,7 @@ public interface WeeklySummaryRepository extends JpaRepository<WeeklySummary, Lo
 	Optional<WeeklySummary> findByUserAndPeriodStartAndPeriodEnd(User user, LocalDate start, LocalDate end);
 
 	List<WeeklySummary> findAllByUser(User user);
+
+	Optional<WeeklySummary> findTopByUserOrderByCreatedAtDesc(User user);
+
 }
